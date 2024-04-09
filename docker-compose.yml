@@ -1,0 +1,25 @@
+version: '1.0'
+
+services:
+  appA:
+    build: ./appA
+    container_name: app-a
+    image: app-a
+    ports:
+      - "3000:3000"
+    networks:
+      - app-global-network
+      - app-local-network
+
+  appB:
+    build: ./appB
+    container_name: app-b
+    image: app-b
+    networks:
+      - app-local-network
+      
+networks:
+    app-global-network:
+        name: app-global-network
+    app-local-network:
+        name: app-local-network

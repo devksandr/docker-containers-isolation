@@ -1,0 +1,9 @@
+{
+  "name": "appB",
+  "version": "1.0.0",
+  "description": "Second Node.js application",
+  "main": "appB.js",
+  "scripts": {
+    "start": "node appB.js"
+  }
+}

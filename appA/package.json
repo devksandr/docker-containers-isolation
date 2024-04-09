@@ -1,0 +1,12 @@
+{
+  "name": "appA",
+  "version": "1.0.0",
+  "description": "First Node.js application",
+  "main": "appA.js",
+  "scripts": {
+    "start": "node appA.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
